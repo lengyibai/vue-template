@@ -1,16 +1,23 @@
-@import url(./clear.less);
-@import url(./variable.less);
-@import url(./global.less);
-@import url(./beautify.less);
-@import url(./animate.less);
+@import url("./clear.less");
+@import url("./variable.less");
+@import url("./global.less");
+@import url("./beautify.less");
+@import url("./animate.less");
 
 html {
   font-size: 16px;
 }
 
 /* 默认竖屏：用宽度缩放 */
-@media screen and (max-width: 390px) and (orientation: portrait) {
+@media screen and (max-width: 425px) and (orientation: portrait) {
   html {
-    font-size: calc((16 / 390) * 100vw);
+    font-size: calc((14 / 425) * 100vw);
+  }
+}
+
+/* 横屏：用高度缩放 */
+@media screen and (max-height: 768px) and (orientation: landscape) {
+  html {
+    font-size: calc((14 / 768) * 100vh);
   }
 }
