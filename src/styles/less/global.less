@@ -1,0 +1,41 @@
+/* 超级居中 */
+.global_flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 自身居中 */
+.global_self-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 超级填充 */
+.global_fill-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 溢出省略号显示单行 */
+.global_one-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 溢出省略号显示多行 */
+.global-line-clamp(@lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: @lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

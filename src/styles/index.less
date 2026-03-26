@@ -1,0 +1,16 @@
+@import url(./clear.less);
+@import url(./variable.less);
+@import url(./global.less);
+@import url(./beautify.less);
+@import url(./animate.less);
+
+html {
+  font-size: 16px;
+}
+
+/* 默认竖屏：用宽度缩放 */
+@media screen and (max-width: 390px) and (orientation: portrait) {
+  html {
+    font-size: calc((16 / 390) * 100vw);
+  }
+}

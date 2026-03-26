@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // 允许编译 JavaScript 文件
+    "isolatedModules": true, // 确保每个文件都可单独编译，适配 Babel/ts-loader
+    "module": "ESNext", // 使用最新的模块系统
+    "moduleResolution": "Bundler", // 适配 Vite 等现代打包工具的模块解析方式
+    "noEmit": true, // 仅做类型检查，不输出编译结果
+    "resolveJsonModule": true, // 允许导入 JSON 文件
+    "skipLibCheck": true, // 跳过库文件检查，加快编译
+    "strict": true, // 开启严格模式
+    "target": "ESNext", // 生成的 JavaScript 目标版本
+    "strictPropertyInitialization": false, // 关闭属性初始化严格检查
+    "noUnusedLocals": true, // 检查未使用的局部变量
+    "strictNullChecks": true, // 开启空值严格检查
+    "noImplicitThis": true, // 禁止隐式 any 的 this
+    "noUnusedParameters": true, // 检查未使用的函数参数
+    "verbatimModuleSyntax": true, // 类型导入需要显式添加 type 前缀
+    "types": ["node", "vite/client"]
+  }
+}
