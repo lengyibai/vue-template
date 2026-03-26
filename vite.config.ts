@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => {
       port: 9527,
       proxy: {
         "/api": {
-          target: "https://user.tumeuat.org/api",
+          target: "https://xxx.xxx.xxx/api",
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ""),
         },
@@ -44,15 +44,6 @@ export default defineConfig(({ mode }) => {
       cssTarget: "chrome61",
       rollupOptions: {
         output: {
-          manualChunks: {
-            game_vue: ["vue"],
-            game_vuePlugin: ["vue-router", "pinia", "mitt"],
-            game_lodash: ["lodash"],
-            game_dayjs: ["dayjs"],
-            game_axios: ["axios"],
-            game_i18n: ["vue-i18n"],
-            game_vueuse: ["@vueuse/core"],
-          },
           chunkFileNames: "assets/js/game-[name]-[hash].js",
           entryFileNames: "assets/js/game-[name]-[hash].js",
           assetFileNames: "assets/[ext]/game-[name]-[hash].[ext]",

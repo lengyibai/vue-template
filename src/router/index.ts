@@ -7,24 +7,11 @@ import routes from "./routes";
 const router = createRouter({
   routes,
   history: createWebHashHistory(),
-  scrollBehavior(to, from, savedPosition) {
-    if (to.meta.noAnimation && from.meta.noAnimation) {
-      return;
-    }
-
-    if (savedPosition)
-      return {
-        ...savedPosition,
-        behavior: "smooth",
-      };
-
-    return { top: 0, behavior: "smooth" };
-  },
 });
 
 /* 路由切换后同步页面标题 */
 router.afterEach((to) => {
-  document.title = `${to.meta.title} - Gem Game Studios`;
+  document.title = `${to.meta.title} - Vue`;
 });
 
 /** @description 安装路由 */
