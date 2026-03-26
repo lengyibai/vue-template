@@ -32,7 +32,7 @@ const { setLocaleMessage, locale, t } = i18n.global;
 /** @description 设置语言
  * @param lang 语言标识
  */
-const setLanguage = (lang: LanguageKey) => {
+const setLanguage = (lang: string) => {
   setLocaleMessage(lang, messages[lang]);
   locale.value = lang;
   localStorage.setItem(LOCAL_KEY.LANGUAGE, lang);

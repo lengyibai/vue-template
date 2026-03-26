@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from "node:url";
 import vue from "@vitejs/plugin-vue";
 import dayjs from "dayjs";
 import { defineConfig, loadEnv } from "vite";
+import Components from "unplugin-vue-components/vite";
 
 export default defineConfig(({ mode }) => {
   process.env.VITE_RESOURSE_VERSION = dayjs().valueOf().toString();
@@ -10,7 +11,16 @@ export default defineConfig(({ mode }) => {
 
   return {
     base: "./",
-    plugins: [vue()],
+    plugins: [
+      vue(),
+      //自动注册src/components下的公共组件
+      Components({
+        dirs: ["src/components"],
+        deep: true,
+        extensions: ["vue"],
+        dts: "src/typings/components.d.ts",
+      }),
+    ],
     css: {
       preprocessorOptions: {
         less: {
