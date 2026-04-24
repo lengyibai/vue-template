@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "type-check": "vue-tsc",
-    "eslint": "eslint \"src/**/*.{vue,ts}\"",
-    "stylelint": "stylelint \"src/**/*.{vue,less}\"",
+    "eslint": "eslint --fix \"src/**/*.{vue,ts}\"",
+    "stylelint": "stylelint --fix \"src/**/*.{vue,less}\"",
     "prettier": "prettier --write \"src/**/*.{vue,ts,less}\"",
     "preview": "vite preview"
   },
