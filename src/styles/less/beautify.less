@@ -1,17 +1,30 @@
 html,
 body,
 #app {
+  overflow: hidden;
   width: 100%;
   height: 100%;
 }
 
 body {
   color: var(--black);
+  background-color: var(--black);
 
   &::selection {
     color: var(--white);
     background-color: var(--black);
   }
+}
+
+#app {
+  position: relative;
+  overflow: auto;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+input {
+  font-size: 16px !important;
 }
 
 .iconfont {
