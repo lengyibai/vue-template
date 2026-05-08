@@ -11,7 +11,7 @@ const router = createRouter({
 
 /* 路由切换后同步页面标题 */
 router.afterEach((to) => {
-  document.title = `${to.meta.title} - Vue`;
+  document.title = `${to.meta.title || "Vite"} - Vue`;
 });
 
 /** @description 安装路由 */
