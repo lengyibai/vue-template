@@ -1,6 +1,6 @@
-import { I18nTypeEnum } from "@/language";
+declare module "*.vue" {
+  import type { DefineComponent } from "vue";
 
-declare module "vue-i18n" {
-  interface ComponentCustomProperties {}
-  interface DefineLocaleMessage extends I18nTypeEnum {}
+  const component: DefineComponent<Record<string, unknown>, Record<string, unknown>, unknown>;
+  export default component;
 }

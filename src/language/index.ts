@@ -6,11 +6,8 @@ import tc from "./modules/tc";
 
 import { LOCAL_KEY } from "@/config";
 
-/** 国际化消息类型 */
-type I18nTypeEnum = typeof en;
-
 /** 语言包映射 */
-const messages: Record<string, I18nTypeEnum> = { en, tc };
+const messages: Record<string, typeof en> = { en, tc };
 
 /** 当前缓存语言 */
 const lang = localStorage.getItem(LOCAL_KEY.LANGUAGE);
@@ -44,4 +41,3 @@ const setupLanguage = (app: App) => {
 };
 
 export { setupLanguage, setLanguage, t };
-export type { I18nTypeEnum };
