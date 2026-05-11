@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import Tabbar from "./components/Tabbar/index.vue";
 import Sidebar from "./components/Sidebar/index.vue";
-
-import { useSidebar } from "@/hooks";
+import { useSidebar } from "./components/Sidebar/hooks/useSidebar";
 
 /** 侧边栏弹窗 hooks */
 const { sidebarVisible } = useSidebar();

@@ -4,7 +4,14 @@ import type { RouteRecordRaw } from "vue-router";
 const staticRouter: RouteRecordRaw[] = [
   {
     path: "/",
-    component: () => import("@/views/Home/index.vue"),
+    component: () => import("@/layout/index.vue"),
+    redirect: "/home",
+    children: [
+      {
+        path: "home",
+        component: () => import("@/views/Home/index.vue"),
+      },
+    ],
   },
 ];
 
