@@ -3,11 +3,12 @@ import type { App } from "vue";
 
 import en from "./modules/en";
 import tc from "./modules/tc";
+import zh from "./modules/zh";
 
 import { LOCAL_KEY } from "@/config";
 
 /** 语言包映射 */
-const messages: Record<string, typeof en> = { en, tc };
+const messages: Record<string, typeof en> = { en, tc, zh };
 
 /** 当前缓存语言 */
 const lang = localStorage.getItem(LOCAL_KEY.LANGUAGE);
@@ -40,4 +41,4 @@ const setupLanguage = (app: App) => {
   app.use(i18n);
 };
 
-export { setupLanguage, setLanguage, t };
+export { setupLanguage, setLanguage, t as $t };
