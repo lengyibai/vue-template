@@ -215,3 +215,9 @@ const tabIndex = defineModel<number>("tabIndex", { required: true });
 - 必做乱码检测：扫描 `U+FFFD` 与典型乱码片段（如 `ï¿½`、`Ã`、`å`、`ä` 在中文语境下异常出现）。
 - 必做 diff 检查：确认本次改动中的中文字符串、中文注释无乱码。
 - 必做注释检查：仅检查强制注释白名单场景，不做全量强制补注释。
+
+## 动画补充规范
+
+- 动画属性优先使用缩写形式（例如 `animation: download-pulse 1.2s ease-in-out infinite`），避免拆分为多个 animation 子属性。
+- `@keyframes` 动画名统一使用中划线命名法（例如 `download-pulse`）。
+- `@keyframes` 不要写在样式顶层，应写在被使用的选择器作用域内，就近与使用处包裹在一起。
