@@ -12,6 +12,7 @@ module.exports = {
     },
   ],
   rules: {
+    "block-no-empty": null, // 允许空块
     "declaration-property-value-no-unknown": null, // 允许使用未知的属性值
     "selector-class-pattern": null, //必须使用中划线命名
     "font-family-no-missing-generic-family-keyword": null, //禁止在字体族名称中使用缺少的通用系列关键字
