@@ -5,7 +5,7 @@
 - Vue 组件统一使用 Vue 3 Composition API 和 `<script setup lang="ts">`。
 - 单文件组件顺序固定为 `<script>`、`<template>`、`<style>`。
 - `<template>` 只能保留一个根节点，不允许多个并列根标签或组件。
-- 页面结构标签统一使用 `div` 或 `span`，不主动引入语义化结构标签；组件标签使用 PascalCase。
+- 页面结构、文本和原生标签的使用遵循 [HTML 规范](./HTML规范.md)；组件标签使用 PascalCase。
 - Props 只读，不在子组件中直接修改；双向绑定使用 `defineModel`。
 - 自定义事件在脚本类型和模板监听中统一使用 kebab-case，例如 `tab-change`。
 - 变量名与属性名一致时使用绑定简写 `:xxx`；布尔属性为 `true` 时直接写属性名。

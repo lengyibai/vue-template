@@ -33,7 +33,8 @@
 | --- | --- |
 | 注释、JSDoc、Template 模块说明 | [注释规范](./agents/注释规范.md) |
 | TypeScript、类型、函数、Pinia、静态资源 | [TypeScript 规范](./agents/TypeScript规范.md) |
-| Vue 页面与组件 | [Vue 规范](./agents/Vue规范.md)、[Vue 文件代码排版](./agents/Vue文件代码排版.md)、[TypeScript 规范](./agents/TypeScript规范.md)、[注释规范](./agents/注释规范.md)、[CSS 规范](./agents/CSS规范.md) |
+| HTML、Vue Template 页面结构 | [HTML 规范](./agents/HTML规范.md) |
+| Vue 页面与组件 | [Vue 规范](./agents/Vue规范.md)、[HTML 规范](./agents/HTML规范.md)、[Vue 文件代码排版](./agents/Vue文件代码排版.md)、[TypeScript 规范](./agents/TypeScript规范.md)、[注释规范](./agents/注释规范.md)、[CSS 规范](./agents/CSS规范.md) |
 | Less、CSS、动画 | [CSS 规范](./agents/CSS规范.md) |
 | 常量、列表、配置与默认数据 | [数据排版](./agents/数据排版.md) |
 
