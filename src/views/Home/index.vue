@@ -1,14 +1,8 @@
-<script setup lang="ts">
-import Navbar from "./components/Navbar/index.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="home">
-    <Navbar />
-
-    <div class="scroll-container">
-      <div v-for="(_, index) in 100" :key="index">滚动区域</div>
-    </div>
+    <div v-for="(_, index) in 100" :key="index">滚动区域</div>
   </div>
 </template>
 
@@ -18,10 +12,6 @@ import Navbar from "./components/Navbar/index.vue";
   display: flex;
   flex-direction: column;
   height: 100%;
-
-  .scroll-container {
-    flex: 1;
-    overflow-y: auto;
-  }
+  color: #fff;
 }
 </style>
